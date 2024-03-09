@@ -10,7 +10,7 @@ import GameKit
 import PencilKit
 
 class MatchManager: NSObject, ObservableObject {
-    @Published var inGame = true
+    @Published var inGame = false
     @Published var isGameOver = false
     @Published var isTimeKeeper = false
     @Published var authenticationState = PlayerAuthState.authenticating
@@ -34,7 +34,7 @@ class MatchManager: NSObject, ObservableObject {
         return windowScene?.windows.first?.rootViewController
     }
     
-    func authenticatedUser() {
+    func authenticateUser() {
         GKLocalPlayer.local.authenticateHandler = { [self] vc, e in
             if let viewController = vc {
                 rootViewController?.present(viewController, animated: true)
