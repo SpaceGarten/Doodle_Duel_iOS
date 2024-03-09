@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		340B0BBA2B98AF780066CA15 /* DoodleDuelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BB92B98AF780066CA15 /* DoodleDuelApp.swift */; };
+		340B0BBC2B98AF780066CA15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BBB2B98AF780066CA15 /* ContentView.swift */; };
+		340B0BBE2B98AF7A0066CA15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340B0BBD2B98AF7A0066CA15 /* Assets.xcassets */; };
+		340B0BC12B98AF7A0066CA15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340B0BC02B98AF7A0066CA15 /* Preview Assets.xcassets */; };
+		340B0BCB2B98AF7A0066CA15 /* DoodleDuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BCA2B98AF7A0066CA15 /* DoodleDuelTests.swift */; };
+		340B0BD52B98AF7A0066CA15 /* DoodleDuelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BD42B98AF7A0066CA15 /* DoodleDuelUITests.swift */; };
+		340B0BD72B98AF7A0066CA15 /* DoodleDuelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BD62B98AF7A0066CA15 /* DoodleDuelUITestsLaunchTests.swift */; };
+		340B0BE42B98B4520066CA15 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BE32B98B4520066CA15 /* MenuView.swift */; };
+		340B0BE62B98B45F0066CA15 /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BE52B98B45F0066CA15 /* MatchManager.swift */; };
+		340B0BE82B98B4680066CA15 /* MIsc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BE72B98B4680066CA15 /* MIsc.swift */; };
+		340B0BEA2B9903BB0066CA15 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BE92B9903BB0066CA15 /* GameOverView.swift */; };
+		340B0BEC2B9909370066CA15 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BEB2B9909370066CA15 /* GameView.swift */; };
+		340B0BEE2B9932CA0066CA15 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BED2B9932C90066CA15 /* DrawingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		340B0BC72B98AF7A0066CA15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 340B0BAE2B98AF780066CA15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 340B0BB52B98AF780066CA15;
+			remoteInfo = DoodleDuel;
+		};
+		340B0BD12B98AF7A0066CA15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 340B0BAE2B98AF780066CA15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 340B0BB52B98AF780066CA15;
+			remoteInfo = DoodleDuel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		340B0BB62B98AF780066CA15 /* DoodleDuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoodleDuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		340B0BB92B98AF780066CA15 /* DoodleDuelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleDuelApp.swift; sourceTree = "<group>"; };
+		340B0BBB2B98AF780066CA15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		340B0BBD2B98AF7A0066CA15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		340B0BC02B98AF7A0066CA15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		340B0BC62B98AF7A0066CA15 /* DoodleDuelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoodleDuelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		340B0BCA2B98AF7A0066CA15 /* DoodleDuelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleDuelTests.swift; sourceTree = "<group>"; };
+		340B0BD02B98AF7A0066CA15 /* DoodleDuelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoodleDuelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		340B0BD42B98AF7A0066CA15 /* DoodleDuelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleDuelUITests.swift; sourceTree = "<group>"; };
+		340B0BD62B98AF7A0066CA15 /* DoodleDuelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleDuelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		340B0BE32B98B4520066CA15 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		340B0BE52B98B45F0066CA15 /* MatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchManager.swift; sourceTree = "<group>"; };
+		340B0BE72B98B4680066CA15 /* MIsc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIsc.swift; sourceTree = "<group>"; };
+		340B0BE92B9903BB0066CA15 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		340B0BEB2B9909370066CA15 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		340B0BED2B9932C90066CA15 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		340B0BEF2B9B8D3A0066CA15 /* DoodleDuel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DoodleDuel.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		340B0BB32B98AF780066CA15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340B0BC32B98AF7A0066CA15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340B0BCD2B98AF7A0066CA15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		340B0BAD2B98AF780066CA15 = {
+			isa = PBXGroup;
+			children = (
+				340B0BB82B98AF780066CA15 /* DoodleDuel */,
+				340B0BC92B98AF7A0066CA15 /* DoodleDuelTests */,
+				340B0BD32B98AF7A0066CA15 /* DoodleDuelUITests */,
+				340B0BB72B98AF780066CA15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		340B0BB72B98AF780066CA15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				340B0BB62B98AF780066CA15 /* DoodleDuel.app */,
+				340B0BC62B98AF7A0066CA15 /* DoodleDuelTests.xctest */,
+				340B0BD02B98AF7A0066CA15 /* DoodleDuelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		340B0BB82B98AF780066CA15 /* DoodleDuel */ = {
+			isa = PBXGroup;
+			children = (
+				340B0BEF2B9B8D3A0066CA15 /* DoodleDuel.entitlements */,
+				340B0BB92B98AF780066CA15 /* DoodleDuelApp.swift */,
+				340B0BBB2B98AF780066CA15 /* ContentView.swift */,
+				340B0BBD2B98AF7A0066CA15 /* Assets.xcassets */,
+				340B0BBF2B98AF7A0066CA15 /* Preview Content */,
+				340B0BE32B98B4520066CA15 /* MenuView.swift */,
+				340B0BE52B98B45F0066CA15 /* MatchManager.swift */,
+				340B0BE72B98B4680066CA15 /* MIsc.swift */,
+				340B0BE92B9903BB0066CA15 /* GameOverView.swift */,
+				340B0BEB2B9909370066CA15 /* GameView.swift */,
+				340B0BED2B9932C90066CA15 /* DrawingView.swift */,
+			);
+			path = DoodleDuel;
+			sourceTree = "<group>";
+		};
+		340B0BBF2B98AF7A0066CA15 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				340B0BC02B98AF7A0066CA15 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		340B0BC92B98AF7A0066CA15 /* DoodleDuelTests */ = {
+			isa = PBXGroup;
+			children = (
+				340B0BCA2B98AF7A0066CA15 /* DoodleDuelTests.swift */,
+			);
+			path = DoodleDuelTests;
+			sourceTree = "<group>";
+		};
+		340B0BD32B98AF7A0066CA15 /* DoodleDuelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				340B0BD42B98AF7A0066CA15 /* DoodleDuelUITests.swift */,
+				340B0BD62B98AF7A0066CA15 /* DoodleDuelUITestsLaunchTests.swift */,
+			);
+			path = DoodleDuelUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		340B0BB52B98AF780066CA15 /* DoodleDuel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 340B0BDA2B98AF7A0066CA15 /* Build configuration list for PBXNativeTarget "DoodleDuel" */;
+			buildPhases = (
+				340B0BB22B98AF780066CA15 /* Sources */,
+				340B0BB32B98AF780066CA15 /* Frameworks */,
+				340B0BB42B98AF780066CA15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoodleDuel;
+			productName = DoodleDuel;
+			productReference = 340B0BB62B98AF780066CA15 /* DoodleDuel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		340B0BC52B98AF7A0066CA15 /* DoodleDuelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 340B0BDD2B98AF7A0066CA15 /* Build configuration list for PBXNativeTarget "DoodleDuelTests" */;
+			buildPhases = (
+				340B0BC22B98AF7A0066CA15 /* Sources */,
+				340B0BC32B98AF7A0066CA15 /* Frameworks */,
+				340B0BC42B98AF7A0066CA15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				340B0BC82B98AF7A0066CA15 /* PBXTargetDependency */,
+			);
+			name = DoodleDuelTests;
+			productName = DoodleDuelTests;
+			productReference = 340B0BC62B98AF7A0066CA15 /* DoodleDuelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		340B0BCF2B98AF7A0066CA15 /* DoodleDuelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 340B0BE02B98AF7A0066CA15 /* Build configuration list for PBXNativeTarget "DoodleDuelUITests" */;
+			buildPhases = (
+				340B0BCC2B98AF7A0066CA15 /* Sources */,
+				340B0BCD2B98AF7A0066CA15 /* Frameworks */,
+				340B0BCE2B98AF7A0066CA15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				340B0BD22B98AF7A0066CA15 /* PBXTargetDependency */,
+			);
+			name = DoodleDuelUITests;
+			productName = DoodleDuelUITests;
+			productReference = 340B0BD02B98AF7A0066CA15 /* DoodleDuelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		340B0BAE2B98AF780066CA15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					340B0BB52B98AF780066CA15 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					340B0BC52B98AF7A0066CA15 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 340B0BB52B98AF780066CA15;
+					};
+					340B0BCF2B98AF7A0066CA15 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 340B0BB52B98AF780066CA15;
+					};
+				};
+			};
+			buildConfigurationList = 340B0BB12B98AF780066CA15 /* Build configuration list for PBXProject "DoodleDuel" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 340B0BAD2B98AF780066CA15;
+			productRefGroup = 340B0BB72B98AF780066CA15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				340B0BB52B98AF780066CA15 /* DoodleDuel */,
+				340B0BC52B98AF7A0066CA15 /* DoodleDuelTests */,
+				340B0BCF2B98AF7A0066CA15 /* DoodleDuelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		340B0BB42B98AF780066CA15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340B0BC12B98AF7A0066CA15 /* Preview Assets.xcassets in Resources */,
+				340B0BBE2B98AF7A0066CA15 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340B0BC42B98AF7A0066CA15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340B0BCE2B98AF7A0066CA15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		340B0BB22B98AF780066CA15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340B0BBC2B98AF780066CA15 /* ContentView.swift in Sources */,
+				340B0BE62B98B45F0066CA15 /* MatchManager.swift in Sources */,
+				340B0BE82B98B4680066CA15 /* MIsc.swift in Sources */,
+				340B0BEE2B9932CA0066CA15 /* DrawingView.swift in Sources */,
+				340B0BE42B98B4520066CA15 /* MenuView.swift in Sources */,
+				340B0BEA2B9903BB0066CA15 /* GameOverView.swift in Sources */,
+				340B0BBA2B98AF780066CA15 /* DoodleDuelApp.swift in Sources */,
+				340B0BEC2B9909370066CA15 /* GameView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340B0BC22B98AF7A0066CA15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340B0BCB2B98AF7A0066CA15 /* DoodleDuelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340B0BCC2B98AF7A0066CA15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340B0BD52B98AF7A0066CA15 /* DoodleDuelUITests.swift in Sources */,
+				340B0BD72B98AF7A0066CA15 /* DoodleDuelUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		340B0BC82B98AF7A0066CA15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 340B0BB52B98AF780066CA15 /* DoodleDuel */;
+			targetProxy = 340B0BC72B98AF7A0066CA15 /* PBXContainerItemProxy */;
+		};
+		340B0BD22B98AF7A0066CA15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 340B0BB52B98AF780066CA15 /* DoodleDuel */;
+			targetProxy = 340B0BD12B98AF7A0066CA15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		340B0BD82B98AF7A0066CA15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		340B0BD92B98AF7A0066CA15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		340B0BDB2B98AF7A0066CA15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DoodleDuel/DoodleDuel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DoodleDuel/Preview Content\"";
+				DEVELOPMENT_TEAM = GM7QT8X369;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CSTP2204.DoodleDuel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		340B0BDC2B98AF7A0066CA15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DoodleDuel/DoodleDuel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DoodleDuel/Preview Content\"";
+				DEVELOPMENT_TEAM = GM7QT8X369;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CSTP2204.DoodleDuel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		340B0BDE2B98AF7A0066CA15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YVH8FPBK2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CSTP2204.DoodleDuelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoodleDuel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoodleDuel";
+			};
+			name = Debug;
+		};
+		340B0BDF2B98AF7A0066CA15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YVH8FPBK2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CSTP2204.DoodleDuelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoodleDuel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoodleDuel";
+			};
+			name = Release;
+		};
+		340B0BE12B98AF7A0066CA15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YVH8FPBK2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CSTP2204.DoodleDuelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoodleDuel;
+			};
+			name = Debug;
+		};
+		340B0BE22B98AF7A0066CA15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YVH8FPBK2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CSTP2204.DoodleDuelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoodleDuel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		340B0BB12B98AF780066CA15 /* Build configuration list for PBXProject "DoodleDuel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340B0BD82B98AF7A0066CA15 /* Debug */,
+				340B0BD92B98AF7A0066CA15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		340B0BDA2B98AF7A0066CA15 /* Build configuration list for PBXNativeTarget "DoodleDuel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340B0BDB2B98AF7A0066CA15 /* Debug */,
+				340B0BDC2B98AF7A0066CA15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		340B0BDD2B98AF7A0066CA15 /* Build configuration list for PBXNativeTarget "DoodleDuelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340B0BDE2B98AF7A0066CA15 /* Debug */,
+				340B0BDF2B98AF7A0066CA15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		340B0BE02B98AF7A0066CA15 /* Build configuration list for PBXNativeTarget "DoodleDuelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340B0BE12B98AF7A0066CA15 /* Debug */,
+				340B0BE22B98AF7A0066CA15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 340B0BAE2B98AF780066CA15 /* Project object */;
+}
