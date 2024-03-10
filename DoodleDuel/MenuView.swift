@@ -24,7 +24,7 @@ struct MenuView: View {
             Spacer()
             
             Button {
-                 
+                matchManger.startMatchMaking()
             } label: {
                 Text("PLAY")
                     .font(.largeTitle)

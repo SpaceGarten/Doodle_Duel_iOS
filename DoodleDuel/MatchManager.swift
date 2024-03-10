@@ -20,8 +20,8 @@ class MatchManager: NSObject, ObservableObject {
     @Published var pastGuesses = [PastGuess]()
     
     @Published var score = 0
-    
     @Published var remainingTime = maxTimeRemaining
+    @Published var lastReceivedDrawing = PKDrawing()
     
     var match: GKMatch?
     var otherPlayer: GKPlayer?
@@ -59,4 +59,53 @@ class MatchManager: NSObject, ObservableObject {
             }
         }
     }
+    
+    func startMatchMaking() {
+        let request = GKMatchRequest()
+        request.minPlayers = 2
+        request.maxPlayers = 2
+        
+        let matchmakingVC = GKMatchmakerViewController(matchRequest: request)
+        matchmakingVC?.matchmakerDelegate = self
+        
+        rootViewController?.present(matchmakingVC!, animated: true)
+        
+    }
+    
+    func startGame(newMatch: GKMatch) {
+        match = newMatch
+        match?.delegate = self
+        otherPlayer = match?.players.first
+        drawPrompt = everydayObjects.randomElement()!
+        
+        sendString("began:\(playerUUIDKey)")
+    }
+    
+    func receivedString(_ message: String) {
+        let messageSplit = message.split(separator: ":")
+        guard let messagePrefix = messageSplit.first else { return }
+        
+        let parameter = String(messageSplit.last ?? "")
+        
+        switch messagePrefix {
+        case "began":
+            if playerUUIDKey == parameter {
+                playerUUIDKey = UUID().uuidString
+                sendString("began:\(playerUUIDKey)")
+                break
+            }
+            
+            currentlyDrawing = playerUUIDKey < parameter
+            inGame = true
+            
+            isTimeKeeper = true
+            if isTimeKeeper {
+                let countdownTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+            }
+            
+        default:
+            break
+        }
+    }
+    
 }
