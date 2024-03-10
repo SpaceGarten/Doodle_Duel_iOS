@@ -20,6 +20,8 @@
 		340B0BEA2B9903BB0066CA15 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BE92B9903BB0066CA15 /* GameOverView.swift */; };
 		340B0BEC2B9909370066CA15 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BEB2B9909370066CA15 /* GameView.swift */; };
 		340B0BEE2B9932CA0066CA15 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BED2B9932C90066CA15 /* DrawingView.swift */; };
+		340B0BF32B9D29700066CA15 /* MatchManager+GKMatchmakerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BF22B9D29700066CA15 /* MatchManager+GKMatchmakerViewControllerDelegate.swift */; };
+		340B0BF52B9D2E4B0066CA15 /* MatchManager+GKMatchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B0BF42B9D2E4B0066CA15 /* MatchManager+GKMatchDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		340B0BEB2B9909370066CA15 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		340B0BED2B9932C90066CA15 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		340B0BEF2B9B8D3A0066CA15 /* DoodleDuel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DoodleDuel.entitlements; sourceTree = "<group>"; };
+		340B0BF22B9D29700066CA15 /* MatchManager+GKMatchmakerViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchManager+GKMatchmakerViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		340B0BF42B9D2E4B0066CA15 /* MatchManager+GKMatchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchManager+GKMatchDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 				340B0BE92B9903BB0066CA15 /* GameOverView.swift */,
 				340B0BEB2B9909370066CA15 /* GameView.swift */,
 				340B0BED2B9932C90066CA15 /* DrawingView.swift */,
+				340B0BF22B9D29700066CA15 /* MatchManager+GKMatchmakerViewControllerDelegate.swift */,
+				340B0BF42B9D2E4B0066CA15 /* MatchManager+GKMatchDelegate.swift */,
 			);
 			path = DoodleDuel;
 			sourceTree = "<group>";
@@ -279,6 +285,8 @@
 			files = (
 				340B0BBC2B98AF780066CA15 /* ContentView.swift in Sources */,
 				340B0BE62B98B45F0066CA15 /* MatchManager.swift in Sources */,
+				340B0BF52B9D2E4B0066CA15 /* MatchManager+GKMatchDelegate.swift in Sources */,
+				340B0BF32B9D29700066CA15 /* MatchManager+GKMatchmakerViewControllerDelegate.swift in Sources */,
 				340B0BE82B98B4680066CA15 /* MIsc.swift in Sources */,
 				340B0BEE2B9932CA0066CA15 /* DrawingView.swift in Sources */,
 				340B0BE42B98B4520066CA15 /* MenuView.swift in Sources */,
@@ -462,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CSTP2204.DoodleDuel;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cstp2204.Doodle-Duel-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -492,7 +500,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CSTP2204.DoodleDuel;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cstp2204.Doodle-Duel-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
