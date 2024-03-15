@@ -84,6 +84,10 @@ class MatchManager: NSObject, ObservableObject {
         otherPlayer = match?.players.first
         drawPrompt = everydayObjects.randomElement()!
         
+        DispatchQueue.main.async {
+            self.inGame = true
+        }
+        
         sendString("began:\(playerUUIDKey)")
     }
     

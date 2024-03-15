@@ -103,6 +103,11 @@ struct GameView: View {
                 .font(.title2)
                 .foregroundColor(Color(matchManager.currentlyDrawing ? "primaryYellow" : "primaryBlue"))
             }
+            
+            Text("Score: \(matchManager.score)")
+                .bold()
+                .font(.title)
+                .foregroundColor(Color(matchManager.currentlyDrawing ? "primaryYellow" : "primaryBlue"))
         }
         .padding(.vertical, 15)
     }
