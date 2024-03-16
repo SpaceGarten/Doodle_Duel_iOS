@@ -29,7 +29,7 @@ struct GameOverView: View {
             Spacer()
             
             Button {
-                
+                matchManager.resetGame()
             } label: {
                 Text("Menu")
                     .font(.largeTitle)

@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 struct MenuView: View {
-    
     @ObservedObject var matchManager: MatchManager
     
     var body: some View {
