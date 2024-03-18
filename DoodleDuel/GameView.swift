@@ -10,10 +10,19 @@ import SwiftUI
 
 var countdownTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
+extension Color {
+    var uiColor: UIColor {
+        UIColor(self)
+    }
+}
+
 struct GameView: View {
     @ObservedObject var matchManager: MatchManager
     @State var drawingGuess = ""
     @State var eraserEnabled = false
+    @State private var selectedColor = Color.black
+    @State private var strokeWidth: CGFloat = 5.0
+
     
     func makeGuess() {
         guard drawingGuess != "" else { return }
@@ -34,13 +43,10 @@ struct GameView: View {
                     topBar
                     
                     ZStack {
-                        DrawingView(matchManager: matchManager, eraserEnabled: $eraserEnabled)
-                            .aspectRatio(1, contentMode: .fit)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(.black, lineWidth: 10)
-                            )
-                        
+                        DrawingView(matchManager: matchManager, eraserEnabled: $eraserEnabled, selectedColor: .constant(selectedColor.uiColor), strokeWidth: $strokeWidth)
+                                            .aspectRatio(1, contentMode: .fit)
+                                            .overlay(RoundedRectangle(cornerRadius: 10).stroke(.black, lineWidth: 10))
+
                         VStack {
                             HStack {
                                 Spacer()
@@ -54,6 +60,13 @@ struct GameView: View {
                                             .foregroundColor(Color("primaryPurple"))
                                             .padding(.top, 10)
                                     }
+                                        ColorPicker("Color", selection: $selectedColor)
+                                                        .padding(.leading, 20)
+
+                                                    
+                                        Slider(value: $strokeWidth, in: 1...20, step: 1)
+                                                        .frame(width: 100)
+                                                        .padding(.leading, 20)
                                 }
                             }
                             
@@ -201,6 +214,7 @@ struct GameView: View {
             .brightness(-0.2)
         )
     }
+    
 }
 
 

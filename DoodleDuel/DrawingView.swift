@@ -25,12 +25,14 @@ struct DrawingView: UIViewRepresentable {
     
     @ObservedObject var matchManager: MatchManager
     @Binding var eraserEnabled: Bool
-    
+    @Binding var selectedColor: UIColor
+    @Binding var strokeWidth: CGFloat
+
     func makeUIView(context: Context) -> PKCanvasView {
         let canvasView = PKCanvasView()
         
         canvasView.drawingPolicy = .anyInput
-        canvasView.tool = PKInkingTool(.pen, color: .black, width: 5)
+        canvasView.tool = eraserEnabled ? PKEraserTool(.vector) : PKInkingTool(.pen, color: selectedColor,width:strokeWidth)
         canvasView.delegate = context.coordinator
         canvasView.isUserInteractionEnabled = matchManager.currentlyDrawing
         
@@ -42,6 +44,8 @@ struct DrawingView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: PKCanvasView, context: Context) {
+        uiView.tool = eraserEnabled ? PKEraserTool(.vector) : PKInkingTool(.pen, color: selectedColor, width: strokeWidth)
+
         let wasDrawing = uiView.isUserInteractionEnabled
         uiView.isUserInteractionEnabled = matchManager.currentlyDrawing
         if !wasDrawing && matchManager.currentlyDrawing {
@@ -51,13 +55,15 @@ struct DrawingView: UIViewRepresentable {
             print("Updating drawing...")
             uiView.drawing = matchManager.lastReceivedDrawing
         }
-        uiView.tool = eraserEnabled ? PKEraserTool(.vector) : PKInkingTool(.pen, color: .black, width: 5)
     }
 }
 
 struct DrawingView_Previews: PreviewProvider {
     @State static var eraser = false
+    @State static var selectedColor = UIColor.black
+    @State static var strokeWidth: CGFloat = 5.0
+
     static var previews: some View {
-        DrawingView(matchManager: MatchManager(), eraserEnabled: $eraser)
+        DrawingView(matchManager: MatchManager(), eraserEnabled: $eraser, selectedColor: $selectedColor, strokeWidth: $strokeWidth)
     }
 }
