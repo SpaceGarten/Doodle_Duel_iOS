@@ -35,7 +35,7 @@ struct GameOverView: View {
                     .font(.largeTitle)
                     .bold()
                     .foregroundColor(Color("menuBtn"))
-                    .brightness(-0.4)
+                    .brightness(-0.3)
                     
                 
             }
