@@ -2,18 +2,26 @@
 //  GameView.swift
 //  DoodleDuel
 //
-//  Created by Matthew Morikan on 2024-03-06.
-//
+//  Created by Muochu Hu on 2024-03-06.
+//  Updated by Joaquin Bo
 
 import Foundation
 import SwiftUI
 
 var countdownTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
+extension Color {
+    var uiColor: UIColor {
+        UIColor(self)
+    }
+}
+
 struct GameView: View {
     @ObservedObject var matchManager: MatchManager
     @State var drawingGuess = ""
     @State var eraserEnabled = false
+    @State private var selectedColor = Color.black
+    @State private var strokeWidth: CGFloat = 5.0
     
     func makeGuess() {
         guard drawingGuess != "" else { return }
@@ -34,12 +42,9 @@ struct GameView: View {
                     topBar
                     
                     ZStack {
-                        DrawingView(matchManager: matchManager, eraserEnabled: $eraserEnabled)
+                        DrawingView(matchManager: matchManager, eraserEnabled: $eraserEnabled, selectedColor: .constant(selectedColor.uiColor), strokeWidth: $strokeWidth)
                             .aspectRatio(1, contentMode: .fit)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(.black, lineWidth: 10)
-                            )
+                            .overlay(RoundedRectangle(cornerRadius: 10).stroke(.black, lineWidth: 10))
                         
                         VStack {
                             HStack {
@@ -54,8 +59,16 @@ struct GameView: View {
                                             .foregroundColor(Color("primaryPurple"))
                                             .padding(.top, 10)
                                     }
+                                    ColorPicker("Color", selection: $selectedColor)
+                                        .padding(.leading, 20)
+                                    
+                                    
+                                    Slider(value: $strokeWidth, in: 1...20, step: 1)
+                                        .frame(width: 100)
+                                        .padding(.leading, 20)
                                 }
                             }
+                            
                             
                             Spacer()
                         }
@@ -63,7 +76,7 @@ struct GameView: View {
                     }
                     
                     pastGuesses
-
+                    
                 }
                 .padding(.horizontal, 30)
                 .ignoresSafeArea(.keyboard, edges: .bottom)
@@ -136,9 +149,9 @@ struct GameView: View {
         .frame(maxWidth: .infinity)
         .background(
             (matchManager.currentlyDrawing ?
-            Color(red: 0.243, green: 0.773, blue: 0.745) :
-            Color("primaryYellow")
-             )
+             Color(red: 0.243, green: 0.773, blue: 0.745) :
+                Color("primaryYellow")
+            )
             .brightness(-0.2)
             .opacity(0.5)
             
@@ -195,7 +208,7 @@ struct GameView: View {
         .background(
             (matchManager.currentlyDrawing ?
              Color(red: 0.243, green: 0.773, blue: 0.745) :
-             Color("primaryYellow")
+                Color("primaryYellow")
             )
             .opacity(0.5)
             .brightness(-0.2)
