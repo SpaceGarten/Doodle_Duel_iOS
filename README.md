@@ -1,5 +1,3 @@
-# Doodle_Duel_iOS
-
 # DoodleDuel
 Welcome to the repository for DoodleDuel, an interactive drawing and guessing game that challenges players to doodle and guess everyday objects within a time limit, promoting creativity and quick thinking.
 
