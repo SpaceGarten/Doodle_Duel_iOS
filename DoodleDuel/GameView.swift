@@ -122,8 +122,8 @@ struct GameView: View {
                     if guess.correct {
                         Image(systemName: "hand.thumbsup.fill")
                             .foregroundColor(matchManager.currentlyDrawing ?
-                                             Color(red: 0.808, green: 0.345, blue: 0.776) :
-                                                Color(red: 0.243, green: 0.773, blue: 0.745)
+                                             Color(red: 0.702, green: 0.323, blue: 0.855) :
+                                                Color(red: 0.223, green: 0.744, blue: 0.783)
                             )
                     }
                 }
