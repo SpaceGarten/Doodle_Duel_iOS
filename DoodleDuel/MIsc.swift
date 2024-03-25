@@ -10,13 +10,14 @@ import Foundation
 
 let everydayObjects = ["pencil", "paper", "book", "table", "chair", "computer", "phone", "keys", "wallet", "watch", "clock", "meat", "bed", "pillow", "blanket", "sofa", "tv", "remote", "car", "bicycle", "bus", "train", "plane", "umbrella", "sunglasses", "shoe", "pants", "shirt", "hat", "coat", "gloves", "scarf", "socks", "toothbrush", "toothpaste", "soap", "shampoo", "conditioner", "razor", "towel", "dish", "silverware", "glass", "plate", "basketball", "fridge", "stove", "oven", "dishwasher", "washing machine", "apple", "vacuum cleaner", "mop", "television", "dustpan", "trash can", "laundry basket", "hanger", "iron", "hairbrush", "comb", "nail clipper", "scissors", "tape", "glue", "stapler", "paperclip", "binder", "folder", "envelope", "post-it note", "calendar", "whiteboard", "marker", "eraser", "pencil", "ruler", "compass", "protractor", "calculator", "flashlight", "battery", "extension cord", "dog", "plunger", "screwdriver", "hammer", "wrench", "tape measure", "paddle board", "pliers", "dolphin"]
 
+
 enum PlayerAuthState: String {
-    case authenticating = "Logging in to Game Center..."
-    case unauthenticated = "Please sign in to Game Center to play."
+    case authenticating = "Loading: Logging in to Game Center..."
+    case unauthenticated = "Please sign in to Game Center to play DoodleDuel."
     case authenticated = ""
     
-    case error = "There was an error logging into Game Center."
-    case restricted = "You're not allowed to play multiplayer games!"
+    case error = "Error: There was a problem logging into Game Center."
+    case restricted = "Your account is not allowed to play multiplayer games."
 }
 
 struct PastGuess: Identifiable {

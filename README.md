@@ -10,10 +10,10 @@ The game includes features like user authentication, live drawing exchange, and 
 
 ## Team
 
-- **Aria**: Lead Developer
-- **Angad**: Lead Developer
-- **Joaquim**: Lead Developer
-- **Matthew**: Project Manager
+- **Aria Abrishamkar**: Design and developed DoodleDuel. Contributed to in-game features and user design flow of the app. 
+- **Angad Dhaliwal**:  Design and developed DoodleDuel.  Contributed to settings menu and multiplayer game features.
+- **Joaquim Borderas-Ochoa**: Design and developed DoodleDuel. Contributed to drawing app canvas design and drawing features. 
+- **Muochu Hu**: Project Manager. Contributed to project development and general iOS development
   
 
 ## Tech Stack
